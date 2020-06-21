@@ -1,16 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import Padrao from '../styles/Padrao'
 
 export default (props) => {
     return (
         <View>
-            <Text style={styles.f20}>{props.texto}</Text>
+            <Text style={Padrao.ex}>{props.texto}</Text>
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    f20: {
-        fontSize: 40
-    }
-});
