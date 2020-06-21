@@ -1,11 +1,17 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import Simples from './src/components/Simples'
+
+import Simples from './Simples'
+import Parimpar from './Parimpar'
+import { Inverter, MegaSena } from './Multi'
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Simples texto="Simples!"></Simples>
+      <Parimpar numero={33}></Parimpar>
+      <Inverter texto="React Native"></Inverter>
+      <MegaSena numeros={8}></MegaSena>
     </View>
   );  
 }
