@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-export default () => {
+export default (props) => {
     return (
         <View>
-            <Text style={styles.f20}>Simples</Text>
+            <Text style={styles.f20}>{props.texto}</Text>
         </View>
     );
 }

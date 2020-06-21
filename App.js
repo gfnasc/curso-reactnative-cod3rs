@@ -5,7 +5,7 @@ import Simples from './src/components/Simples'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Simples></Simples>
+      <Simples texto="Simples!"></Simples>
     </View>
   );  
 }
