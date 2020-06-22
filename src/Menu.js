@@ -5,8 +5,13 @@ import { createDrawerNavigator } from 'react-navigation-drawer'
 import Simples from './components/Simples'
 import Parimpar from './components/Parimpar'
 import { Inverter, MegaSena } from './components/Multi'
+import Contador from './components/Contador'
 
 export default createDrawerNavigator({
+    Contador: {
+        screen: () => <Contador numero={8}></Contador>,
+        navigationOptions: { title: 'Contador' }
+    },
     MegaSena: {
         screen: () => <MegaSena></MegaSena>,
         navigationOptions: { title: 'Mega Sena' }
