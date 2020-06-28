@@ -1,13 +1,17 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Platform } from 'react-native';
 import { createDrawerNavigator } from 'react-navigation-drawer'
 
 import Simples from './components/Simples'
 import Parimpar from './components/Parimpar'
 import { Inverter, MegaSena } from './components/Multi'
 import Contador from './components/Contador'
+import Plataforma from './components/Plataforma'
 
 export default createDrawerNavigator({
+    Plataforma: {
+        screen: () => <Plataforma></Plataforma>
+    },
     Contador: {
         screen: () => <Contador numero={8}></Contador>,
         navigationOptions: { title: 'Contador' }
